@@ -1,0 +1,51 @@
+{
+  "name": "entity-fetcher",
+  "version": "0.1.0",
+  "main": "build/index.js",
+  "repository": "https://github.com/SprintHive/entity-fetcher",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --mode development --watch",
+    "build": "webpack -p"
+  },
+  "author": "Jon Lai Lam",
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-object-rest-spread",
+      "transform-react-jsx",
+      "transform-class-properties"
+    ]
+  },
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "css-loader": "^1.0.0",
+    "deepmerge": "^2.0.1",
+    "file-loader": "^2.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "style-loader": "^0.23.0",
+    "react-redux": "^5.0.6",
+    "recompose": "^0.30.0",
+    "redux": "^3.7.2",
+    "redux-observable": "^0.17.0",
+    "rxjs": "^5.5.12",
+    "webpack": "^4.19.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "eslint-plugin-class-property": "^1.1.0",
+    "webpack-cli": "^3.1.0"
+  }
+}
