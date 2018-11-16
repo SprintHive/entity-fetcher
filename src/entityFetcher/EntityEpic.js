@@ -60,12 +60,9 @@ export const fetchEntity = (action$, store, deps) => {
             const payload = data.reduce((acc, entity) => {
 
               const id = entity[idField];
-              console.log(id)
               acc[id] = entity;
               return acc;
             }, {});
-            console.log("data", data);
-            console.log("payload", payload);
             return Observable.of(fetchEntityCompleted(entityKey, entityId, payload));
           }
         })
